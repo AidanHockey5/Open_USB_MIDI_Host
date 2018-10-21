@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name MAX3421E)(type Legacy)(uri ${KIPRJMOD}/lib/MAX3421E.mod)(options "")(descr ""))
+  (lib (name MM74HC4050M)(type Legacy)(uri ${KIPRJMOD}/lib/MM74HC4050M.mod)(options "")(descr ""))
+  (lib (name misc)(type KiCad)(uri ${KIPRJMOD}/lib/misc.pretty)(options "")(descr ""))
+  (lib (name w_conn_av)(type KiCad)(uri ${KIPRJMOD}/lib/w_conn_av.pretty)(options "")(descr ""))
+)
