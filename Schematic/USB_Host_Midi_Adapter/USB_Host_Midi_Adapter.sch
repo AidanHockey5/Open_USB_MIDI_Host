@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:USB_Host_Midi_Adapter-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -92,7 +93,7 @@ U 1 1 5BCBC2A7
 P 1250 4900
 F 0 "U2" H 1250 5142 50  0000 C CNN
 F 1 "LD1117S33TR_SOT223" H 1250 5051 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-223-3Lead_TabPin2" H 1250 5100 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 1250 5100 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 1350 4650 50  0001 C CNN
 	1    1250 4900
 	1    0    0    -1  
@@ -874,50 +875,6 @@ F 3 "" H 6000 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
-U 1 1 5BCBCCDF
-P 2800 3000
-F 0 "#PWR04" H 2800 2750 50  0001 C CNN
-F 1 "GND" H 2805 2827 50  0000 C CNN
-F 2 "" H 2800 3000 50  0001 C CNN
-F 3 "" H 2800 3000 50  0001 C CNN
-	1    2800 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 2950 2800 3000
-$Comp
-L device:C_Small C2
-U 1 1 5BCBCB74
-P 2800 2850
-F 0 "C2" H 2850 2900 50  0000 L CNN
-F 1 "100nF" H 2850 2800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2800 2850 50  0001 C CNN
-F 3 "~" H 2800 2850 50  0001 C CNN
-	1    2800 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 2750 2800 2750
-$Comp
-L power:+5V #PWR02
-U 1 1 5BCBC861
-P 2600 2750
-F 0 "#PWR02" H 2600 2600 50  0001 C CNN
-F 1 "+5V" V 2615 2878 50  0000 L CNN
-F 2 "" H 2600 2750 50  0001 C CNN
-F 3 "" H 2600 2750 50  0001 C CNN
-	1    2600 2750
-	0    -1   -1   0   
-$EndComp
-Connection ~ 2800 2750
-Wire Wire Line
-	2800 2750 3200 2750
-Wire Wire Line
-	3200 2650 3250 2650
-Wire Wire Line
-	3200 2750 3200 2650
-$Comp
 L power:GND #PWR07
 U 1 1 5BCBC972
 P 3250 4650
@@ -983,7 +940,7 @@ MISO
 Text GLabel 900  7300 0    50   Input ~ 0
 SCK
 Text GLabel 900  7400 0    50   Input ~ 0
-RST
+RESET
 Text GLabel 1400 7300 2    50   Input ~ 0
 MOSI
 $Comp
@@ -1059,4 +1016,20 @@ NoConn ~ 5150 4550
 NoConn ~ 5150 4650
 NoConn ~ 5150 4750
 NoConn ~ 5150 4850
+Wire Wire Line
+	3200 2550 3200 2650
+Wire Wire Line
+	3200 2650 3250 2650
+Connection ~ 3200 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5BCC58AE
+P 10050 5200
+F 0 "#PWR?" H 10050 4950 50  0001 C CNN
+F 1 "GND" H 10055 5027 50  0000 C CNN
+F 2 "" H 10050 5200 50  0001 C CNN
+F 3 "" H 10050 5200 50  0001 C CNN
+	1    10050 5200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

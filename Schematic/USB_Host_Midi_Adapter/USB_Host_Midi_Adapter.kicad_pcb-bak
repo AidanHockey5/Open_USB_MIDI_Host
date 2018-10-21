@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 25)
+    (drawings 24)
     (tracks 281)
     (zones 0)
     (modules 37)
@@ -752,7 +752,7 @@
     (at 141.732 82.423 270)
     (descr "Din 5 (MIDI), Pro Signal P/N PSG03463")
     (path /5BCBBB1A)
-    (fp_text reference J1 (at -3.4925 -8.128) (layer F.SilkS)
+    (fp_text reference J1 (at -10.033 4.572) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.25)))
     )
     (fp_text value "DIN-5, 180°" (at 10.287 -4.953) (layer F.SilkS)
@@ -1760,10 +1760,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
   )
 
-  (gr_text "Standard DIN MIDI Out" (at 142.4305 72.39) (layer F.SilkS) (tstamp 5BCC6E78)
-    (effects (font (size 1 1) (thickness 0.25)))
-  )
-  (gr_text "USB MIDI Keyboard In" (at 211.0105 99.8855) (layer F.SilkS)
+  (gr_text "USB MIDI Keyboard" (at 211.5185 99.6315) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.25)))
   )
   (gr_text "USB port for \nDC 5V input only" (at 146.939 104.775) (layer F.SilkS)
